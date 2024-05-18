@@ -4,34 +4,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OOP-2</title>
+    <title>Hospital-Management-System</title>
 
     <!-- css -->
 
     <link rel="stylesheet" href="style.css">
 
-    <!-- ui -->
+    <!-- Tailwind & DaisyUI -->
 
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.10.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
 
-    <!-- icon -->
-
-    <script src="https://kit.fontawesome.com/eba93be5c5.js" crossorigin="anonymous"></script>
-
-    <!-- google font -->
+    <!-- font -->
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
+
 </head>
+
+<!-- body -->
 
 <body>
 
-    <!-- header -->
+    <!--header section  -->
 
-    <header class="lg:ml-20 ml-4 lg:mr-20 mr-4 lg:mt-10 mt-2">
+    <header class="lg:ml-32 lg:mr-32 mt-10">
 
         <!-- nav section -->
 
@@ -58,7 +58,7 @@
                             <li><a href="service.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Services</a>
                             </li>
-                            <li><a
+                            <li><a href="contact.html"
                                     class="text-lg font-semibold hover:text-white hover:bg-green-500 flex justify-center items-center">Contact</a>
                             </li>
                             <li><a href="appointment.html"
@@ -82,7 +82,8 @@
                                 class="text-lg font-semibold hover:text-white hover:bg-green-500">About</a></li>
                         <li><a href="service.html"
                                 class="text-lg font-semibold hover:text-white hover:bg-green-500">Services</a></li>
-                        <li><a class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
+                        <li><a href="contact.html"
+                                class="text-lg font-semibold hover:text-white hover:bg-green-500">Contact</a></li>
                         <li><a href="appointment.html"
                                 class="text-lg font-semibold hover:text-white hover:bg-green-500">Appointment</a></li>
                         <li><a href="register.html"
@@ -98,88 +99,96 @@
             </div>
 
         </section>
-
-
     </header>
-
-    <!-- main -->
-
-    <main class="lg:ml-20 ml-4 lg:mr-20 mr-4 mt-2 mb-10">
-
-        <!-- hero section -->
-
-        <section class="hero">
-
-            <div class="hero min-h-96" style="background-image: url(assats/2717003.jpg);">
-                <div class="hero-overlay bg-opacity-60"></div>
-                <div class="hero-content text-center text-neutral-content">
-                    <div class="max-w-md">
-                        <h1 class="mb-5 text-3xl lg:text-5xl font-bold">About Us</h1>
-                        <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi
-                            exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                    </div>
-                </div>
+    <!-- Register Form -->
+    <main class="lg:ml-20 ml-4 lg:mr-20 mr-4">
+        <div class="flex lg:flex-row flex-col gap-20">
+            <div
+                class="flex flex-col justify-center items-center text-2xl font-bold border-2 h-40 p-10 lg:w-1/4 rounded-2xl">
+                <ul>
+                    <li> <a href="prevRegistration.html">Patient</a> </li>
+                    <li> <a href="">Doctor</a></li>
+                    <li> <a href="prevRegistration.html">Admin</a></li>
+                </ul>
             </div>
-        </section>
-
-        <!-- about section -->
-
-        <section class="about mt-20">
-
-            <div>
-                <h2 class="text-center lg:text-5xl text-3xl font-extrabold">
-                    About Us
-                </h2>
-                <p class="mt-5 text-center">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, expedita? Lorem ipsum dolor sit
-                    amet
-                    consectetur <br> adipisicing elit. Provident, in!
-                </p>
-            </div>
-
-            <div class="mt-20 lg:ml-20 ml-4 lg:mr-20  mr-4">
-
-                <div class="flex lg:flex-row flex-col justify-center items-center lg:gap-8 gap-4">
-                    <!-- card-1 -->
-
-                    <!-- card-2 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="assats/2108.q705.020.S.m005.c10.healthcare medications.jpg" alt="Shoes"
-                                class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Medicine</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
-                            </div>
-                        </div>
+            <div class=" flex justify-center bg-gray-100 lg:w-3/4 py-10 rounded-xl">
+                <form action="#non" method="post" class="w-full max-w-md bg-white rounded-lg shadow-md p-8">
+                    <p class="text-gray-700 mb-4">Note: All fields are required.</p>
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <input type="text" placeholder="First Name" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input type="text" placeholder="Last Name" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
                     </div>
-                    <!-- card-3 -->
-                    <div class="card w-96 bg-base-100 shadow-xl">
-                        <figure class="px-10 pt-10">
-                            <img src="assats/asian-young-main-group-hospital-professional.jpg" alt="Shoes"
-                                class="rounded-xl" />
-                        </figure>
-                        <div class="card-body items-center text-center">
-                            <h2 class="card-title">Doctors</h2>
-                            <p>If a dog chews shoes whose shoes does he choose?</p>
-                            <div class="card-actions">
-                                <button class="btn btn-primary">See more...</button>
-                            </div>
-                        </div>
+                    <input type="email" placeholder="Email Address" required
+                        class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                    <div class="grid grid-cols-2 gap-4 mb-4">
+                        <input type="password" placeholder="Password" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input type="password" placeholder="Verify Password" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
                     </div>
-                </div>
-
+                    <div class="grid grid-cols-3 gap-4 mb-4">
+                        <input type="text" placeholder="Date (dd)" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input type="text" placeholder="Month (mm)" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input type="text" placeholder="Year (yyyy)" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                    </div>
+                    <!-- <div class="grid grid-cols-2 gap-4 mb-4">
+                        <select
+                            class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                            <option value="0" selected disabled>City</option>
+                            <option value="1">Dhaka</option>
+                        </select>
+                        <select
+                            class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                            <option value="0" selected disabled>Country</option>
+                            <option value="1">Bangladesh</option>
+                            <option value="2">Outside Bangladesh</option>
+                        </select>
+                    </div> -->
+                    <select
+                        class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="0" selected disabled>Specialty</option>
+                        <option value="1">Family Medicine</option>
+                    </select>
+                    <select
+                        class="border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <option value="0" selected disabled>Degree</option>
+                        <option value="1">English</option>
+                    </select>
+                    <div class="flex items-center mb-4 gap-4">
+                        <input type="text" placeholder="Medical school" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                        <input type="text" placeholder="Medical ID" required
+                            class="w-full border border-gray-300 rounded-md py-2 px-4 mb-4 focus:outline-none focus:ring focus:border-blue-300">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fileToUpload" class="block text-sm font-medium text-gray-700">Upload your medical ID:</label>
+                        <input type="file" name="fileToUpload" id="fileToUpload" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                    </div>
+                    <div class="mb-4">
+                        <label for="fileToUpload2" class="block text-sm font-medium text-gray-700">Upload your personal photo:</label>
+                        <input type="file" name="fileToUpload2" id="fileToUpload2" required
+                            class="border border-gray-300 rounded-md py-2 px-4 focus:outline-none focus:ring focus:border-blue-300">
+                    </div>
+                    <div class="flex items-center mb-4">
+                        <input type="checkbox" id="register-agree"
+                            class="rounded border-gray-300 focus:ring focus:border-blue-300">
+                        <label for="register-agree" class="ml-2 block text-sm text-gray-900">
+                            Do you agree to the <a href="#" class="text-blue-600">terms and conditions?</a>
+                        </label>
+                    </div>
+                    <input type="submit" value="Register Request"
+                        class="w-full bg-blue-500 text-white font-semibold px-4 py-2 rounded-md hover:bg-blue-600 transition duration-300">
+                </form>
             </div>
-
-        </section>
-
-
+        </div>
     </main>
-
-    <!-- footer -->
+    <!-- footer section -->
 
     <footer
         class=" pl-30 pr-30 pt-10 pb-10 lg:pl-36 footer bg-[#001529] text-base-content lg:flex lg:justify-between mt-10">
@@ -231,7 +240,9 @@
         </nav>
     </footer>
 
+    <!-- js file -->
 
+    <script src="tailwind.config.js"></script>
 </body>
 
 </html>
